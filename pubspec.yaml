@@ -31,7 +31,6 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-  easy_localization: ^3.0.7
   another_flushbar: ^1.12.30
   flutter_bloc: ^8.1.6
   # Code generator (mainly used with cubit & retrofit)

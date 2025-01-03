@@ -21,11 +21,18 @@ class CustomHomeAppBar extends StatelessWidget {
             right: 16.0,
           ),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SvgPicture.asset(
                 SvgAssets.homeAppLogo,
+              ),
+              Spacer(),
+              IconButton(
+                onPressed: () {},
+                icon: SvgPicture.asset(
+                  SvgAssets.homeLangIcon,
+                  height: 35,
+                ),
               ),
               IconButton(
                 onPressed: () {},

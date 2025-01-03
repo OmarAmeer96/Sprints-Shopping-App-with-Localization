@@ -28,7 +28,7 @@ class HomeView extends StatelessWidget {
                   CustomHomeBanner(),
                   verticalSpace(20),
                   CategoryHeaderSection(
-                    title: 'Best Selling',
+                    title: 'Our Products',
                   ),
                   verticalSpace(16),
                   BestSellingGridView(),

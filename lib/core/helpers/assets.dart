@@ -16,6 +16,7 @@ class SvgAssets {
   // Home View
   static const homeCartIcon = 'assets/svgs/home_cart_icon.svg';
   static const arrowForward = 'assets/svgs/arrow_forward.svg';
+  static const homeLangIcon = 'assets/svgs/language_icon.svg';
 }
 
 class ImageAssets {
