@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   cupertino_icons: ^1.0.8
   another_flushbar: ^1.12.30
   flutter_bloc: ^8.1.6
@@ -77,7 +79,6 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -93,10 +94,8 @@ flutter:
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
-
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/to/asset-from-package
-
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
@@ -115,6 +114,7 @@ flutter:
     - family: ClashDisplay-Variable
       fonts:
         - asset: assets/fonts/ClashDisplay-Variable.ttf
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_intl:
+  enabled: true

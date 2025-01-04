@@ -3,6 +3,7 @@ import 'package:sprints_shopping_app_with_localization/core/helpers/assets.dart'
 import 'package:sprints_shopping_app_with_localization/core/theming/colors_manager.dart';
 import 'package:sprints_shopping_app_with_localization/core/theming/styles.dart';
 import 'package:sprints_shopping_app_with_localization/features/home/widgets/custom_home_banner_button.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class CustomHomeBanner extends StatelessWidget {
   const CustomHomeBanner({super.key});
@@ -43,7 +44,7 @@ class CustomHomeBanner extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'New Vintage Collection',
+                  S.of(context).banner_text,
                   style: Styles.font20WhiteSemiBold,
                 ),
                 const SizedBox(height: 8),
