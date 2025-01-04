@@ -6,6 +6,7 @@ import 'package:sprints_shopping_app_with_localization/features/home/widgets/cus
 import 'package:sprints_shopping_app_with_localization/features/home/widgets/custom_home_banner.dart';
 import 'package:sprints_shopping_app_with_localization/features/home/widgets/custom_positioned_home_overlay.dart';
 import 'package:sprints_shopping_app_with_localization/features/home/widgets/hot_offers_list_view.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -28,13 +29,13 @@ class HomeView extends StatelessWidget {
                   CustomHomeBanner(),
                   verticalSpace(20),
                   CategoryHeaderSection(
-                    title: 'Our Products',
+                    title: S.of(context).our_products_section_header,
                   ),
                   verticalSpace(16),
                   BestSellingGridView(),
                   verticalSpace(20),
                   CategoryHeaderSection(
-                    title: 'Hot Offers',
+                    title: S.of(context).hot_offers_section_header,
                   ),
                   verticalSpace(16),
                   SizedBox(

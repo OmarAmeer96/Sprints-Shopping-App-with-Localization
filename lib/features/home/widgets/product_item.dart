@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:sprints_shopping_app_with_localization/core/helpers/display_flush_bar.dart';
+import 'package:sprints_shopping_app_with_localization/core/helpers/is_arabic.dart';
 import 'package:sprints_shopping_app_with_localization/core/helpers/spacing.dart';
 import 'package:sprints_shopping_app_with_localization/core/theming/styles.dart';
 import 'package:sprints_shopping_app_with_localization/features/home/widgets/product_item_button.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class ProductItem extends StatelessWidget {
   const ProductItem({
@@ -52,10 +54,12 @@ class ProductItem extends StatelessWidget {
                   ),
                   verticalSpace(8),
                   Align(
-                    alignment: Alignment.centerLeft,
+                    alignment: isArabic(context)
+                        ? Alignment.centerRight
+                        : Alignment.centerLeft,
                     child: Text(
                       textAlign: TextAlign.start,
-                      "SONY 200mm Zoom",
+                      S.of(context).product_name,
                       overflow: TextOverflow.ellipsis,
                       style: Styles.font12ProductName,
                     ),
@@ -64,7 +68,7 @@ class ProductItem extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        "\$6000",
+                        S.of(context).product_price,
                         style: Styles.font14ProductPrice,
                       ),
                       Spacer(),
@@ -83,7 +87,7 @@ class ProductItem extends StatelessWidget {
               onTap: () {
                 displayFlushBar(
                   context,
-                  message: "Added to the cart",
+                  message: S.of(context).added_to_cart,
                   color: Color(0xFF3b3e45),
                   icon: Icons.check_box,
                 );
