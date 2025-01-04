@@ -4,7 +4,7 @@ Welcome to **Sprints Shopping App with Localization**, a Flutter project designe
 
 ### App Demo Video 🎥
 
-[Watch the localization demo video here]()
+[Watch the localization demo video here](https://github.com/user-attachments/assets/97e05f41-2573-4f31-b53e-a85af759cbf4)
 
 ## Screenshots (English)
 
@@ -16,7 +16,7 @@ Welcome to **Sprints Shopping App with Localization**, a Flutter project designe
 
 | Splash                                                                                       | Signin                                                                                       | Signup                                                                                       | Home                                                                                         | Adding to Cart                                                                               |
 | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/user-attachments/assets/27ad281a-4d6b-4d93-8401-52f19159fc90"/> | <img src="https://github.com/user-attachments/assets/d2a658b2-0159-4c3c-9b1a-235c70a9a4f1"/> | <img src="https://github.com/user-attachments/assets/2a514191-61d7-45d4-80b6-58cf923e0bed"/> | <img src="https://github.com/user-attachments/assets/872ef61c-0d43-4220-9230-14aef670e55b"/> | <img src="https://github.com/user-attachments/assets/c5b12af0-dad4-4559-ba96-9d4bb1339545"/> |
+| <img src="https://github.com/user-attachments/assets/27ad281a-4d6b-4d93-8401-52f19159fc90"/> | <img src="https://github.com/user-attachments/assets/ee98c912-1965-413b-8003-4cb97fa6b05b"/> | <img src="https://github.com/user-attachments/assets/1efbeff6-7108-44aa-955d-cf46fd5ecd21"/> | <img src="https://github.com/user-attachments/assets/65f555bf-29ef-49f3-b44c-2980500bfdfb"/> | <img src="https://github.com/user-attachments/assets/5abc27a8-e409-4c36-9d99-7488d1d48d45"/> |
 
 ## Features
 
