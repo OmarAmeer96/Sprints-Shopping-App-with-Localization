@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sprints_shopping_app_with_localization/core/helpers/spacing.dart';
 import 'package:sprints_shopping_app_with_localization/core/theming/font_family_helper.dart';
 import 'package:sprints_shopping_app_with_localization/core/theming/styles.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class LoginViewWelcomeTexts extends StatelessWidget {
   const LoginViewWelcomeTexts({
@@ -16,7 +17,7 @@ class LoginViewWelcomeTexts extends StatelessWidget {
         Align(
           alignment: AlignmentDirectional.topStart,
           child: Text(
-            "Welcome Back",
+            S.of(context).login_welcome,
             style: Styles.font22AppBar.copyWith(
               fontSize: 24.sp,
               letterSpacing: -0.48,
@@ -27,7 +28,7 @@ class LoginViewWelcomeTexts extends StatelessWidget {
         ),
         verticalSpace(8),
         Text(
-          "We're excited to have you back, can't wait to see what you've been up to since you last logged in.",
+          S.of(context).login_welcome_message,
           style: Styles.font20HeaderSection.copyWith(
             fontSize: 15.sp,
             letterSpacing: 0.20,

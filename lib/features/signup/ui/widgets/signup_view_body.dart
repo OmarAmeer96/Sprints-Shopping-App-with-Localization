@@ -9,6 +9,7 @@ import 'package:sprints_shopping_app_with_localization/features/signup/ui/widget
 import 'package:sprints_shopping_app_with_localization/features/signup/ui/widgets/signup_bloc_listener.dart';
 import 'package:sprints_shopping_app_with_localization/features/signup/ui/widgets/signup_email_and_password_widget.dart';
 import 'package:sprints_shopping_app_with_localization/features/signup/ui/widgets/signup_view_welcome_texts.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class SignupViewBody extends StatefulWidget {
   const SignupViewBody({super.key});
@@ -50,7 +51,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                               onPressed: () {
                                 validateThenSignup(context);
                               },
-                              buttonText: 'Sign Up',
+                              buttonText: S.of(context).signup_button,
                             ),
                             verticalSpace(30),
                             const AlreadyHaveAccountText(),

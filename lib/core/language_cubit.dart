@@ -10,7 +10,7 @@ class LanguageCubit extends Cubit<Locale> {
 
   void _loadCurrentLocale() async {
     String? currentLocale =
-        await SharedPrefHelper.getString(SharedPrefKeys.currentLocale);
+        await SharedPrefHelper.getString(SharedPrefKeys.currentLocale) ?? 'en';
     if (currentLocale != null) {
       emit(Locale(currentLocale));
     }

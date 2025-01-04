@@ -3,6 +3,7 @@ import 'package:sprints_shopping_app_with_localization/core/theming/font_family_
 import 'package:sprints_shopping_app_with_localization/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class SignupViewWelcomeTexts extends StatelessWidget {
   const SignupViewWelcomeTexts({
@@ -16,7 +17,7 @@ class SignupViewWelcomeTexts extends StatelessWidget {
         Align(
           alignment: AlignmentDirectional.topStart,
           child: Text(
-            "Create Account",
+            S.of(context).signup_welcome,
             style: Styles.font22AppBar.copyWith(
               fontSize: 24.sp,
               letterSpacing: -0.48,
@@ -27,7 +28,7 @@ class SignupViewWelcomeTexts extends StatelessWidget {
         ),
         verticalSpace(8),
         Text(
-          "Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our community!",
+          S.of(context).signup_welcome_message,
           style: Styles.font20HeaderSection.copyWith(
             fontSize: 15.sp,
             letterSpacing: 0.20,

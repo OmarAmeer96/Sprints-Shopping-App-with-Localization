@@ -8,6 +8,7 @@ import 'package:sprints_shopping_app_with_localization/core/theming/styles.dart'
 import 'package:sprints_shopping_app_with_localization/core/widgets/custom_main_text_form_field.dart';
 import 'package:sprints_shopping_app_with_localization/core/widgets/password_vlaidations.dart';
 import 'package:sprints_shopping_app_with_localization/features/signin/logic/login_cubit/login_cubit.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class LoginEmailAndPasswordWidget extends StatefulWidget {
   const LoginEmailAndPasswordWidget({super.key});
@@ -60,7 +61,7 @@ class _LoginEmailAndPasswordWidgetState
       child: Column(
         children: [
           CustomMainTextFormFiels(
-            labelText: 'Email',
+            labelText: S.of(context).login_email,
             labelStyle: Styles.font22AppBar.copyWith(
               fontSize: 13,
               color: ColorsManager.accentColor,
@@ -93,7 +94,7 @@ class _LoginEmailAndPasswordWidgetState
           ),
           verticalSpace(18),
           CustomMainTextFormFiels(
-            labelText: 'Password',
+            labelText: S.of(context).login_password,
             labelStyle: Styles.font22AppBar.copyWith(
               fontSize: 13,
               color: ColorsManager.accentColor,

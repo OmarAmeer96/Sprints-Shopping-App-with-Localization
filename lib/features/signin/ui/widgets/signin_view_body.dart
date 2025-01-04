@@ -11,6 +11,7 @@ import 'package:sprints_shopping_app_with_localization/features/signin/ui/widget
 import 'package:sprints_shopping_app_with_localization/features/signin/ui/widgets/login_email_and_password_widget.dart';
 import 'package:sprints_shopping_app_with_localization/features/signin/ui/widgets/login_view_welcome_texts.dart';
 import 'package:sprints_shopping_app_with_localization/features/home/widgets/custom_positioned_home_overlay.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class SigninViewBody extends StatefulWidget {
   const SigninViewBody({super.key});
@@ -52,7 +53,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                               child: GestureDetector(
                                 onTap: () {},
                                 child: Text(
-                                  'Forgot password?',
+                                  S.of(context).forgot_password,
                                   style: Styles.font12HomeBanner.copyWith(
                                     color: ColorsManager.textFieldFillColor,
                                   ),
@@ -64,7 +65,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                               onPressed: () {
                                 validateThenLogin(context);
                               },
-                              buttonText: 'Login',
+                              buttonText: S.of(context).login_button,
                             ),
                             verticalSpace(60),
                             const DontHaveAccountText(),

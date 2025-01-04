@@ -5,6 +5,7 @@ import 'package:sprints_shopping_app_with_localization/core/routing/routes.dart'
 import 'package:sprints_shopping_app_with_localization/core/theming/colors_manager.dart';
 import 'package:sprints_shopping_app_with_localization/core/theming/font_family_helper.dart';
 import 'package:sprints_shopping_app_with_localization/core/theming/styles.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class DontHaveAccountText extends StatelessWidget {
   const DontHaveAccountText({super.key});
@@ -16,7 +17,7 @@ class DontHaveAccountText extends StatelessWidget {
       text: TextSpan(
         children: [
           TextSpan(
-            text: 'Don\'t have an account?',
+            text: S.of(context).login_donot_have_account,
             style: Styles.font20WhiteSemiBold.copyWith(
               color: ColorsManager.accentColor,
               fontSize: 13.sp,
@@ -25,7 +26,7 @@ class DontHaveAccountText extends StatelessWidget {
             ),
           ),
           TextSpan(
-            text: ' Sign Up',
+            text: S.of(context).login_signup,
             style: Styles.font20WhiteSemiBold.copyWith(
               fontSize: 13.sp,
               fontFamily: FontFamilyHelper.suwannaphumBold,

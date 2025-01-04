@@ -5,6 +5,7 @@ import 'package:sprints_shopping_app_with_localization/core/theming/styles.dart'
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class AlreadyHaveAccountText extends StatelessWidget {
   const AlreadyHaveAccountText({super.key});
@@ -16,7 +17,7 @@ class AlreadyHaveAccountText extends StatelessWidget {
       text: TextSpan(
         children: [
           TextSpan(
-            text: "Already have an account?",
+            text: S.of(context).signup_already_have_account,
             style: Styles.font20WhiteSemiBold.copyWith(
               color: ColorsManager.accentColor,
               fontSize: 13.sp,
@@ -25,7 +26,7 @@ class AlreadyHaveAccountText extends StatelessWidget {
             ),
           ),
           TextSpan(
-            text: ' Sign in',
+            text: S.of(context).signup_signin,
             style: Styles.font20WhiteSemiBold.copyWith(
               fontSize: 13.sp,
               fontFamily: FontFamilyHelper.suwannaphumBold,

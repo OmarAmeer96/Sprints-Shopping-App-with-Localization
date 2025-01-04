@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sprints_shopping_app_with_localization/core/helpers/spacing.dart';
 import 'package:sprints_shopping_app_with_localization/core/theming/colors_manager.dart';
 import 'package:sprints_shopping_app_with_localization/core/theming/styles.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class PasswordValidations extends StatelessWidget {
   final bool hasLowerCase;
@@ -22,16 +23,19 @@ class PasswordValidations extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        buildValidationRow('At least one lowercase letter', hasLowerCase),
-        verticalSpace(2),
-        buildValidationRow('At least one uppercase letter', hasUpperCase),
+        buildValidationRow(
+            S.of(context).password_validation_lowercase, hasLowerCase),
         verticalSpace(2),
         buildValidationRow(
-            'At least one special character', hasSpecialCharacters),
+            S.of(context).password_validation_uppercase, hasUpperCase),
         verticalSpace(2),
-        buildValidationRow('At least one number', hasNumber),
+        buildValidationRow(S.of(context).password_validation_special_character,
+            hasSpecialCharacters),
         verticalSpace(2),
-        buildValidationRow('At least 8 characters', hasMinLength),
+        buildValidationRow(S.of(context).password_validation_number, hasNumber),
+        verticalSpace(2),
+        buildValidationRow(
+            S.of(context).password_validation_min_length, hasMinLength),
       ],
     );
   }

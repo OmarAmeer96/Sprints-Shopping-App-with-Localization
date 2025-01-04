@@ -7,6 +7,7 @@ import 'package:sprints_shopping_app_with_localization/core/widgets/custom_main_
 import 'package:sprints_shopping_app_with_localization/features/signup/logic/signup_cubit/signup_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sprints_shopping_app_with_localization/generated/l10n.dart';
 
 class SignupEmailAndPasswordWidget extends StatefulWidget {
   const SignupEmailAndPasswordWidget({super.key});
@@ -63,7 +64,7 @@ class _SignupEmailAndPasswordWidgetState
       child: Column(
         children: [
           CustomMainTextFormFiels(
-            labelText: 'Name',
+            labelText: S.of(context).signup_name,
             labelStyle: Styles.font22AppBar.copyWith(
               fontSize: 13,
               color: ColorsManager.accentColor,
@@ -93,7 +94,7 @@ class _SignupEmailAndPasswordWidgetState
           ),
           verticalSpace(18),
           CustomMainTextFormFiels(
-            labelText: 'Email',
+            labelText: S.of(context).signup_email,
             labelStyle: Styles.font22AppBar.copyWith(
               fontSize: 13,
               color: ColorsManager.accentColor,
@@ -126,7 +127,7 @@ class _SignupEmailAndPasswordWidgetState
           ),
           verticalSpace(18),
           CustomMainTextFormFiels(
-            labelText: 'Phone Number',
+            labelText: S.of(context).signup_phone_number,
             labelStyle: Styles.font22AppBar.copyWith(
               fontSize: 13,
               color: ColorsManager.accentColor,
@@ -157,7 +158,7 @@ class _SignupEmailAndPasswordWidgetState
 
           verticalSpace(18),
           CustomMainTextFormFiels(
-            labelText: 'Password',
+            labelText: S.of(context).signup_password,
             labelStyle: Styles.font22AppBar.copyWith(
               fontSize: 13,
               color: ColorsManager.accentColor,
@@ -203,7 +204,7 @@ class _SignupEmailAndPasswordWidgetState
           ),
           verticalSpace(18),
           CustomMainTextFormFiels(
-            labelText: 'Confirm Password',
+            labelText: S.of(context).signup_confirm_password,
             labelStyle: Styles.font22AppBar.copyWith(
               fontSize: 13,
               color: ColorsManager.accentColor,

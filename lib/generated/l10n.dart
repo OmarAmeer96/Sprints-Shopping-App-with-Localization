@@ -119,6 +119,236 @@ class S {
       args: [],
     );
   }
+
+  /// `Welcome Back`
+  String get login_welcome {
+    return Intl.message(
+      'Welcome Back',
+      name: 'login_welcome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We're excited to have you back, can't wait to see what you've been up to since you last logged in.`
+  String get login_welcome_message {
+    return Intl.message(
+      'We\'re excited to have you back, can\'t wait to see what you\'ve been up to since you last logged in.',
+      name: 'login_welcome_message',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get login_email {
+    return Intl.message(
+      'Email',
+      name: 'login_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get login_password {
+    return Intl.message(
+      'Password',
+      name: 'login_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least one lowercase letter`
+  String get password_validation_lowercase {
+    return Intl.message(
+      'At least one lowercase letter',
+      name: 'password_validation_lowercase',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least one uppercase letter`
+  String get password_validation_uppercase {
+    return Intl.message(
+      'At least one uppercase letter',
+      name: 'password_validation_uppercase',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least one special character`
+  String get password_validation_special_character {
+    return Intl.message(
+      'At least one special character',
+      name: 'password_validation_special_character',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least one number`
+  String get password_validation_number {
+    return Intl.message(
+      'At least one number',
+      name: 'password_validation_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least 8 characters`
+  String get password_validation_min_length {
+    return Intl.message(
+      'At least 8 characters',
+      name: 'password_validation_min_length',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot Password?`
+  String get forgot_password {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'forgot_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get login_button {
+    return Intl.message(
+      'Login',
+      name: 'login_button',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't have an account?`
+  String get login_donot_have_account {
+    return Intl.message(
+      'Don\'t have an account?',
+      name: 'login_donot_have_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Sign Up`
+  String get login_signup {
+    return Intl.message(
+      ' Sign Up',
+      name: 'login_signup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create Account`
+  String get signup_welcome {
+    return Intl.message(
+      'Create Account',
+      name: 'signup_welcome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our community!`
+  String get signup_welcome_message {
+    return Intl.message(
+      'Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!',
+      name: 'signup_welcome_message',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get signup_name {
+    return Intl.message(
+      'Name',
+      name: 'signup_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get signup_email {
+    return Intl.message(
+      'Email',
+      name: 'signup_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone Number`
+  String get signup_phone_number {
+    return Intl.message(
+      'Phone Number',
+      name: 'signup_phone_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get signup_password {
+    return Intl.message(
+      'Password',
+      name: 'signup_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm Password`
+  String get signup_confirm_password {
+    return Intl.message(
+      'Confirm Password',
+      name: 'signup_confirm_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get signup_button {
+    return Intl.message(
+      'Sign Up',
+      name: 'signup_button',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account?`
+  String get signup_already_have_account {
+    return Intl.message(
+      'Already have an account?',
+      name: 'signup_already_have_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Sign in`
+  String get signup_signin {
+    return Intl.message(
+      ' Sign in',
+      name: 'signup_signin',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
